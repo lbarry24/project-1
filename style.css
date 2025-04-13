@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2em;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #001e44;
+  margin-bottom: 1em;
+}
+
+.steps-list {
+  padding-left: 1em;
+  position: relative;
+}
+
+.steps-list-item {
+  display: block;
+  margin-bottom: 2em;
+  position: relative;
+  padding-left: 3em;
+}
+
+.steps-circle {
+  position: absolute;
+  left: -1.6em;
+  top: 0.2em;
+  width: 2.5em;
+  height: 2.5em;
+  background-color: #001e44;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Vertical dotted line continues all the way */
+.steps-list-item::before {
+  content: '';
+  position: absolute;
+  left: -0.35em;
+  top: 2.7em;
+  width: 0;
+  height: calc(100% - 2.7em);
+  border-left: 2px dotted #ccc;
+  z-index: 1;
+}
+
+.steps-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #001e44;
+  margin: 0 0 0.5em;
+}
+
+.steps-content {
+  font-size: 16px;
+  color: #333;
+}
+
+.steps-content ul {
+  padding-left: 1.2em;
+}
+
+.steps-content li {
+  margin-bottom: 0.5em;
+}
